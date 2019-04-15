@@ -24,11 +24,11 @@
 
 ### 替换表达式（用于文本内容替换）
 ```
-baseproject-springboot=usercenter
 com.shareyi.basespringboot=com.shareyi.user.center
+baseproject-springboot=usercenter
 ```
 
 ### 目录转换表达式（用于包路径转换）
 ```
-com/shareyi/basespringboot=com/shareyi/user.center
+com/shareyi/basespringboot=com/shareyi/user/center
 ```
