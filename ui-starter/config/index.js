@@ -7,7 +7,7 @@ module.exports = {
     build: {
         env: require('./prod.env'),
         index: path.resolve(__dirname, '../dist/index.html'),
-        assetsRoot: path.resolve(__dirname, '../../molicode-web/src/main/resources/static'),
+        assetsRoot: path.resolve(__dirname, '../../baseproject-springboot-web/src/main/resources/static'),
         assetsSubDirectory: 'static',
         assetsJsDirectory: 'static/js',
         assetsPublicPath: '/',

@@ -16,8 +16,7 @@ fs.open('./build/env.js', 'w', function(err, fd) {
     fs.write(fd, buf, 0, buf.length, 0, function(err, written, buffer) {});
 });
 
-var outputPath = path.resolve('../molicode-web/src/main/resources/static/dist')
-console.log("outputPath:"+ outputPath)
+var outputPath = path.resolve('../baseproject-springboot-web/src/main/resources/static/dist')
 module.exports = merge(webpackBaseConfig, {
     output: {
         publicPath: '/dist/',  // 修改 https://iv...admin 这部分为你的服务器域名
