@@ -17,3 +17,18 @@
 
 前台： vue + iview admin + nodejs + webpack
 
+## molicode替换表达式
+
+如下：新建一个usercenter的项目， maven的artifact前缀为：usercenter-***
+包路径以： com.shareyi.user.center 开始；
+
+### 替换表达式（用于文本内容替换）
+```
+com.shareyi.basespringboot=com.shareyi.user.center
+baseproject-springboot=usercenter
+```
+
+### 目录转换表达式（用于包路径转换）
+```
+com/shareyi/basespringboot=com/shareyi/user/center
+```
