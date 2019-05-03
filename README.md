@@ -65,7 +65,7 @@ npm run dev
 
 # 执行编译发布
 npm run build
-
+# 编译后会推送到 web层的:  src/main/resources/static 目录下；
 ```
 
 
