@@ -35,4 +35,13 @@ public class CommonConstant {
      * 逗号分隔
      */
     public static final String COMMA = ",";
+
+    /**
+     * 默认分页大小
+     */
+    public static final int DEF_PAGE_SIZE = 10;
+    /**
+     * 最大分页大小
+     */
+    public static final int MAX_PAGE_SIZE = 200;
 }

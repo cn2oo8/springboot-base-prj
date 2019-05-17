@@ -1,5 +1,6 @@
 package com.shareyi.basespringboot.web.base;
 
+import com.shareyi.basespringboot.common.constants.CommonConstant;
 import com.shareyi.basespringboot.common.web.CommonResult;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.ui.ModelMap;
@@ -13,15 +14,6 @@ import javax.servlet.http.HttpServletRequest;
  * @date 2018-08-04
  */
 public class BaseController {
-
-    /**
-     * 默认的pageSize
-     */
-    public static final int DEFAULT_PAGE_SIZE = 10;
-    /**
-     * 最大的pageSize
-     */
-    public static final int MAX_PAGE_SIZE = 100;
 
 
     public void toVm(CommonResult result, ModelMap context) {
@@ -39,7 +31,7 @@ public class BaseController {
      * @return
      */
     public int getPageSize(HttpServletRequest request) {
-        return getPageSize(request, DEFAULT_PAGE_SIZE, MAX_PAGE_SIZE);
+        return getPageSize(request, CommonConstant.DEF_PAGE_SIZE, CommonConstant.MAX_PAGE_SIZE);
     }
 
     /**
