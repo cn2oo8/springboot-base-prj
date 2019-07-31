@@ -1,5 +1,0 @@
-#set($layout="layout/myLayout.vm")
-
-hello world
-
-$!date.format('yyyy-MM-dd',$!now)
