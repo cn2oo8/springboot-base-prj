@@ -1,11 +1,13 @@
 package com.shareyi.basespringboot.controller;
 
+import com.shareyi.basespringboot.common.web.CommonResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Date;
+import java.util.Map;
 
 /**
  * 页面功能
@@ -29,5 +31,12 @@ public class PageTestController {
         context.put("hello", "Hello world");
         context.put("now", new Date());
         return "hello";
+    }
+
+
+    @RequestMapping(value = "/hello")
+    @ResponseBody
+    public Map error() {
+        return CommonResult.create().succeed().getReturnMap();
     }
 }
