@@ -5,7 +5,10 @@
 
 ## 可适配的模板引擎
 示例模板：
+git地址：
 [https://github.com/cn2oo8/autocode-template-example](https://github.com/cn2oo8/autocode-template-example)
+
+分支：d_20190731_iviewslot
 
 请选择其中的：autocode-template-selfsdk	
 
