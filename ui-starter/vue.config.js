@@ -45,8 +45,14 @@ module.exports = {
     port: 8081,
     proxy: {
       '/conf/': {
-        target: 'http://127.0.0.1:8098/',
-//        host: 'http://localhost.shareyi.com',
+        target: 'http://localhost.shareyi.com:8098/',
+        host: 'http://localhost.shareyi.com',
+        secure: false,
+        changeOrigin: true
+      },
+      '/config/': {
+        target: 'http://localhost.shareyi.com:8098/',
+        host: 'http://localhost.shareyi.com',
         secure: false,
         changeOrigin: true
       }
