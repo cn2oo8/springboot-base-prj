@@ -1,14 +1,14 @@
 export default {
-    configs: {
-        databaseConfig: {
-            configKey: 'databaseConfig'
-        },
-        pathConfig: {
-            configKey: 'pathConfig',
-            tableModelDir: 'tableModelDir',
-            autoXmlPath: 'autoXmlPath',
-            templateBaseDir: 'templateBaseDir',
-            projectOutputDir: 'projectOutputDir'
-        }
+  configs: {
+    databaseConfig: {
+      configKey: 'databaseConfig'
+    },
+    pathConfig: {
+      configKey: 'pathConfig',
+      tableModelDir: 'tableModelDir',
+      autoXmlPath: 'autoXmlPath',
+      templateBaseDir: 'templateBaseDir',
+      projectOutputDir: 'projectOutputDir'
     }
-};
+  }
+}

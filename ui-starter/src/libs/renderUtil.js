@@ -7,7 +7,7 @@ var _ = require('underscore')
  * @returns {*}
  */
 export const formatDate = (param) => {
-    return formatDateTimeExp(param, 'YYYY-MM-DD')
+  return formatDateTimeExp(param, 'YYYY-MM-DD')
 }
 
 /**
@@ -16,7 +16,7 @@ export const formatDate = (param) => {
  * @returns {*}
  */
 export const formatDateTime = (param) => {
-    return formatDateTimeExp(param, 'YYYY-MM-DD HH:mm:ss')
+  return formatDateTimeExp(param, 'YYYY-MM-DD HH:mm:ss')
 }
 
 /**
@@ -25,54 +25,53 @@ export const formatDateTime = (param) => {
  * @returns {*}
  */
 export const formatDateTimeExp = (param, exp) => {
-    if (param == null || param === '') {
-        return ''
-    }
-    if (isNaN(param)) {
-        return param
-    }
-    return moment(param).format(exp)
+  if (param == null || param === '') {
+    return ''
+  }
+  if (isNaN(param)) {
+    return param
+  }
+  return moment(param).format(exp)
 }
-
 
 export const toArray = (param) => {
-    if (param === null || param === undefined) {
-        return []
-    }
-    if (_.isArray(param)) {
-        return param
-    }
-    return [param]
+  if (param === null || param === undefined) {
+    return []
+  }
+  if (_.isArray(param)) {
+    return param
+  }
+  return [param]
 }
 
-export function toStringArray(params) {
-    var array = toArray(params)
-    return _.map(array, function (item) {
-        if (item == null || _.isString(item)) {
-            return item
-        }
-        return item + ''
-    })
+export function toStringArray (params) {
+  var array = toArray(params)
+  return _.map(array, function (item) {
+    if (item == null || _.isString(item)) {
+      return item
+    }
+    return item + ''
+  })
 }
 
 export function transferString (param) {
-    if (_.isArray(param)) {
-        return toStringArray(param)
-    }
-    let tempVal = param
-    if (tempVal !== null && !_.isString(tempVal)) {
-        tempVal = tempVal + ''
-    }
-    return tempVal
+  if (_.isArray(param)) {
+    return toStringArray(param)
+  }
+  let tempVal = param
+  if (tempVal !== null && !_.isString(tempVal)) {
+    tempVal = tempVal + ''
+  }
+  return tempVal
 }
 
 export function transferNumber (v) {
-    if (_.isArray(v)) {
-        v = _.map(v, function (i) {
-            return Number.isNaN(Number(i)) ? i : Number(i)
-        })
-    } else {
-        v = Number.isNaN(Number(v)) ? v : Number(v)
-    }
-    return v
+  if (_.isArray(v)) {
+    v = _.map(v, function (i) {
+      return Number.isNaN(Number(i)) ? i : Number(i)
+    })
+  } else {
+    v = Number.isNaN(Number(v)) ? v : Number(v)
+  }
+  return v
 }
