@@ -3,7 +3,7 @@ package com.shareyi.basespringboot.common.chain;
 import com.google.common.collect.Lists;
 import com.shareyi.basespringboot.common.chain.handler.Handler;
 import com.shareyi.basespringboot.common.chain.handler.HandlerAware;
-import org.apache.commons.collections.MapUtils;
+import org.apache.commons.collections4.MapUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;

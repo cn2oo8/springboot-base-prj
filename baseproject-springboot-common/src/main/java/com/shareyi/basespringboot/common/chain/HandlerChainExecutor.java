@@ -5,7 +5,7 @@ import com.shareyi.basespringboot.common.chain.handler.Handler;
 import com.shareyi.basespringboot.common.enums.ResultCodeEnum;
 import com.shareyi.basespringboot.common.exception.AutoCodeException;
 import com.shareyi.basespringboot.common.utils.LogHelper;
-import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.List;
 
