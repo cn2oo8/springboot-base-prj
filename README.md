@@ -22,7 +22,10 @@ git地址：
 
 ## molicode替换表达式
 
-如下：新建一个usercenter的项目， maven的artifact前缀为：usercenter-***
+如下：
+
+新建一个usercenter的项目， maven的artifact前缀为：usercenter-***
+
 包路径以： com.shareyi.user.center 开始；
 
 ### 替换表达式（用于文本内容替换）
@@ -59,7 +62,11 @@ https://github.com/iview/iview-admin 相关说明；
 
 一般使用方案为：
 
-```bush
+```bash
+
+#从工程目录进入ui工作目录
+cd ui-starter
+
 #安装nodejs相关依赖
 npm install
 
