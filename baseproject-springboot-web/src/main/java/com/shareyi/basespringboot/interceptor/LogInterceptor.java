@@ -1,7 +1,7 @@
 package com.shareyi.basespringboot.interceptor;
 
 import com.shareyi.basespringboot.common.constants.CommonConstant;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
