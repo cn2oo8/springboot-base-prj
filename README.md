@@ -8,7 +8,7 @@
 git地址：
 [https://gitee.com/molicode_repo/autocode-template-example](https://gitee.com/molicode_repo/autocode-template-example)
 
-分支：d_20190731_iviewslot
+分支：master
 
 请选择其中的：autocode-template-selfsdk	
 
