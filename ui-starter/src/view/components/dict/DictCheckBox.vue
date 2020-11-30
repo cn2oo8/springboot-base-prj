@@ -16,7 +16,9 @@ export default {
   props: {
     value: {
       type: [String, Number, Array, Boolean],
-      default: []
+      default: function () {
+        return []
+      }
     },
     number: {
       type: Boolean,
@@ -82,7 +84,7 @@ export default {
       let newVal = transferString(this.value)
       if (_.isArray(newVal)) {
         if (_.isArray(this.model)) {
-          if (_.difference(newVal, this.model).length !== 0) {
+          if (newVal.length != this.model.length || _.intersection(newVal, this.model).length !== newVal.length) {
             this.model = newVal
           }
         } else {
@@ -102,6 +104,7 @@ export default {
         v = transferNumber(v)
       }
       this.$emit('input', v)
+      this.$emit('on-change', v)
     },
     loadDict (data) {
       this.dictItems = data
