@@ -26,7 +26,7 @@
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <lombok.version>1.16.16</lombok.version>
         <swagger.version>2.6.1</swagger.version>
-        <fastjson.version>1.2.75</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <guava.version>23.0</guava.version>
         <javassist.version>3.18.1-GA</javassist.version>
         <commons.collection.version>4.1</commons.collection.version>
